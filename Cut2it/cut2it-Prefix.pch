@@ -1,0 +1,53 @@
+//
+// Prefix header for all source files of the 'cut2it' target in the 'cut2it' project
+//
+
+#import <Availability.h>
+
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <MediaPlayer/MediaPlayer.h>
+    #import <CoreMedia/CoreMedia.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import <CoreText/CoreText.h>
+    #import "Util.h"
+#endif
+
+#define TOKEN    @"opf.authentication.token"
+#define USERNAME @"username"
+#define PASSWORD @"password"
+#define PASSWORD_HINT @"password_hint"
+#define SEARCH   @"search"
+#define FACEBOOK @"facebook"
+#define FACEBOOK_USERNAME @"facebook_username"
+#define TWITTER_KEY  @"twitter_key"
+#define TWITTER_SECRET  @"twitter_secret"
+#define TWITTER_USERNAME  @"twitter_username"
+#define TWITTER_USER @"twitter_user"
+#define HELP @"help"
+#define INTRO @"intro"
+#define kFirstName @"firstName"
+#define kLastName @"lastName"
+
+#define FACEBOOK_Firstname @"facebookFirstname"
+#define FACEBOOK_Lastname @"facebookLastname"
+
+#define IOS_6 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] >= 6.0 )
+#define LIMIT 8
+
+//Bhavya
+#define IPHONE_5 ( [[UIScreen mainScreen] bounds].size.height > 480.0 )
+#define TABHOME @"HomeViewController"
+#define TABYOUTUBE @"YouTubeViewController"
+#define TABCAMERA @"TitleViewController"
+#define TABLIBRARY @"VideoViewController"
+#define TABSETTINGS @"SettingsViewController"
+
+//#define kTWConsumerKey @"Bd4qFTELB8BLzMcg1ODiw"
+//#define kTWConsumerSecret @"muZDXsbUpKxm7CWQ9ABiK6SRbnsqCNkcf2RZ6HMcqs"
